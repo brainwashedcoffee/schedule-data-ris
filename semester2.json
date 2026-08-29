@@ -1,6 +1,6 @@
 {
   "monday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Computing Fundamentals", "teacher": "Amir Sohail", "room": "Room 5-19", "type": "Lecture" },
+    { "time": "11:30 AM – 12:30 PM", "subject": "CF", "teacher": "Amir Sohail", "room": "Room 5-19", "type": "Lecture" },
     { "time": "12:30 PM – 01:30 PM", "subject": "Computing Fundamentals", "teacher": "Amir Sohail", "room": "Room 5-19", "type": "Lecture" },
     { "time": "01:30 PM – 02:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-03", "type": "Lecture" },
     { "time": "02:30 PM – 03:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
