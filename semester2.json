@@ -1,49 +1,30 @@
 {
   "monday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "No Subject", "teacher": "Nill", "room": "Room 0-00", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Computing Fundamentals", "teacher": "Amir Sohail", "room": "Room 5-19", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-03", "type": "Lecture" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "Applied Calculus & Analytical Geometry", "teacher": "Engr. Yaseen", "room": "Room 5-03", "type": "Lecture" }
+    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
+    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
   ],
+
+  
   "tuesday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Tajweed", "teacher": "Kamran Ayub", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Fund of Maths I (Only for Pre Med)", "teacher": "Engr. Rana Saqib", "room": "Workshop Lab", "type": "Lab" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Fund of Maths I (Only for Pre Med)", "teacher": "Engr. Rana Saqib", "room": "Workshop Lab", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Fund of Maths I (Only for Pre Med)", "teacher": "Engr. Rana Saqib", "room": "Workshop Lab", "type": "Lab" }
+    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
+    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
   ],
+
+  
   "wednesday": [
-    { "time": "12:30 PM – 01:30 PM", "subject": "Applied Physics", "teacher": "M Ishaq", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Applied Physics", "teacher": "M Ishaq", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Engineering Drawing & CAD", "teacher": "Engr. Ifrah", "room": "Computing Lab", "type": "Lab" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Engineering Drawing & CAD", "teacher": "Engr. Ifrah", "room": "Computing Lab", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Engineering Drawing & CAD", "teacher": "Engr. Ifrah", "room": "Computing Lab", "type": "Lab" }
+    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
+    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
   ],
+
+  
   "thursday": [
-    { "time": "03:30 PM – 04:30 PM", "subject": "Applied Physics Lab", "teacher": "M Ishaq", "room": "Physics Lab", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Applied Physics Lab", "teacher": "M Ishaq", "room": "Physics Lab", "type": "Lab" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "Applied Physics Lab", "teacher": "M Ishaq", "room": "Physics Lab", "type": "Lab" }
+    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
+    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
   ],
+
+  
   "friday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Islam", "teacher": "Tayyaba", "room": "Room 6-19", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Islam", "teacher": "Tayyaba", "room": "Room 6-19", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Jummah Break", "teacher": "_", "room": "_", "type": "Break" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Applied Cal & Analytical", "teacher": "Engr. Yaseen", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Applied Cal & Analytical", "teacher": "Engr. Yaseen", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "ig", "teacher": "Ruqqaiya Tayyab", "room": "Room 5-04", "type": "Lecture" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "lmao", "teacher": "Ruqqaiya Tayyab", "room": "Room 5-04", "type": "Lecture" }
-  ],
-  "sunday": [
-    { "time": "03:30 AM – 04:30 PM", "subject": "Islamic Studies/Ethics", "teacher": "Tayyaba", "room": "Room 6-19", "type": "Lecture" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Islamic Studies/Ethics", "teacher": "Tayyaba", "room": "Room 6-19", "type": "Lecture" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "Jummah Break", "teacher": "_", "room": "_", "type": "Break" },
-    { "time": "06:30 PM – 07:30 PM", "subject": "Applied Cal & Analytical", "teacher": "Engr. Yaseen", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "07:30 PM – 08:30 PM", "subject": "Applied Cal & Analytical", "teacher": "Engr. Yaseen", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "08:30 PM – 09:30 PM", "subject": "Ideo & Const", "teacher": "Ruqqaiya Tayyab", "room": "Room 5-04", "type": "Lecture" },
-    { "time": "09:30 PM – 10:30 PM", "subject": "Ideo & Const", "teacher": "Ruqqaiya Tayyab", "room": "Room 5-04", "type": "Lecture" }
+    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
+    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
   ]
 }
