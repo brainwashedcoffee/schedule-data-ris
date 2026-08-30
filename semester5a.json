@@ -1,0 +1,194 @@
+{
+  "monday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Rob Sys & Prog Lab",
+      "teacher": "Dr. Sheryar",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Rob Sys & Prog Lab",
+      "teacher": "Dr. Sheryar",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Rob Sys & Prog Lab",
+      "teacher": "Dr. Sheryar",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Sensors and Actuators",
+      "teacher": "Dr. Usman",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Sensors and Actuators",
+      "teacher": "Dr. Usman",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    }
+  ],
+  "tuesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Communication System Lab",
+      "teacher": "Engr. Zainab",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Communication System Lab",
+      "teacher": "Engr. Zainab",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Communication System Lab",
+      "teacher": "Engr. Zainab",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Communication Systems",
+      "teacher": "Dr. Junaid",
+      "room": "05-19",
+      "type": "Lecture"
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Sensors and Actuators",
+      "teacher": "Dr. Usman",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "LCS",
+      "teacher": "Dr. Maryam",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "LCS",
+      "teacher": "Dr. Maryam",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Robotics System and Prog",
+      "teacher": "Dr. Sheryar",
+      "room": "EMS Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Robotics System and Prog",
+      "teacher": "Dr. Sheryar",
+      "room": "EMS Lab",
+      "type": "Lecture"
+    }
+  ],
+  "thursday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Robotics System and Programming",
+      "teacher": "Dr. Sheryar",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "LCS",
+      "teacher": "Dr. Maryam",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Understanding Quran-IV",
+      "teacher": "Dr. Rahimullah",
+      "room": "Auditorium",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Ideology & Const Pak",
+      "teacher": "Dr. Maryam",
+      "room": "EMS Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Ideology & Const Pak",
+      "teacher": "Dr. Maryam",
+      "room": "EMS Lab",
+      "type": "Lecture"
+    }
+  ],
+  "friday": [
+    {
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "LCS Lab",
+      "teacher": "Engr. Ifrah",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "LCS Lab",
+      "teacher": "Engr. Ifrah",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "LCS Lab",
+      "teacher": "Engr. Ifrah",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Jummah Break",
+      "teacher": "None",
+      "room": "None",
+      "type": "None"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Sensors and Actuators Lab",
+      "teacher": "Engr. Imran Ahmed",
+      "room": "06-02",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Sensors and Actuators Lab",
+      "teacher": "Engr. Imran Ahmed",
+      "room": "06-02",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Sensors and Actuators Lab",
+      "teacher": "Engr. Imran Ahmed",
+      "room": "06-02",
+      "type": "Lecture"
+    }
+  ]
+}

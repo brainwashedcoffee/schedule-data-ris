@@ -1,0 +1,208 @@
+{
+  "monday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Communication Systems",
+      "teacher": "Engr. Umair",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Communication Systems",
+      "teacher": "Engr. Umair",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "LCS",
+      "teacher": "Engr. Yaseen",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "LCS",
+      "teacher": "Engr. Yaseen",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Robotics System and Progg",
+      "teacher": "Dr. Sheryar",
+      "room": "05-17",
+      "type": "Lecture"
+    }
+  ],
+  "tuesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Robotics System and Progg",
+      "teacher": "Dr. Sheryar",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Robotics System and Progg",
+      "teacher": "Dr. Sheryar",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Sensors and Actuators",
+      "teacher": "Dr. Usman",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Communication Systems",
+      "teacher": "Engr. Umair",
+      "room": "05-04",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Sensors and Actuators Lab",
+      "teacher": "Syed Kamran",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Sensors and Actuators Lab",
+      "teacher": "Syed Kamran",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Sensors and Actuators Lab",
+      "teacher": "Syed Kamran",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Ideology & Const Pak",
+      "teacher": "Adil Yousaf",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Ideology & Const Pak",
+      "teacher": "Adil Yousaf",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "LCS Lab",
+      "teacher": "Saqib Islam",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "LCS Lab",
+      "teacher": "Saqib Islam",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "LCS Lab",
+      "teacher": "Saqib Islam",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    }
+  ],
+  "thursday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Sensors and Actuators",
+      "teacher": "Dr. Usman",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Sensors and Actuators",
+      "teacher": "Dr. Usman",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Understanding Quran-IV",
+      "teacher": "Dr. Rahimullah",
+      "room": "Auditorium",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "LCS",
+      "teacher": "Engr. Yaseen",
+      "room": "05-18",
+      "type": "Lecture"
+    }
+  ],
+  "friday": [
+    {
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "Rob Sys & Prog Lab",
+      "teacher": "Shahzaib Ali",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Rob Sys & Prog Lab",
+      "teacher": "Shahzaib Ali",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Rob Sys & Prog Lab",
+      "teacher": "Shahzaib Ali",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Jummah Break",
+      "teacher": "None",
+      "room": "None",
+      "type": "None"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Communication System Lab",
+      "teacher": "None",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Communication System Lab",
+      "teacher": "None",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Communication System Lab",
+      "teacher": "None",
+      "room": "Comm Lab",
+      "type": "Lecture"
+    }
+  ]
+}

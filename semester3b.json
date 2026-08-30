@@ -1,0 +1,208 @@
+{
+  "monday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Probability and Statistics",
+      "teacher": "Engr. Muneeb",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Probability and Statistics",
+      "teacher": "Engr. Muneeb",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Object Oriented",
+      "teacher": "Amir Sohail",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Introduction to Robotics",
+      "teacher": "Dr. Umaid",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Comm Skills",
+      "teacher": "Zareen",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Comm Skills",
+      "teacher": "Zareen",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    }
+  ],
+  "tuesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Digital Logic Design",
+      "teacher": "Engr. Rida",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Digital Logic Design",
+      "teacher": "Engr. Rida",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Probability and Statistics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-04",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Introduction to Robotics",
+      "teacher": "Dr. Umaid",
+      "room": "EMS Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Introduction to Robotics",
+      "teacher": "Dr. Umaid",
+      "room": "EMS Lab",
+      "type": "Lecture"
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Introduction to Robotics Lab",
+      "teacher": "Engr. Zain",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Introduction to Robotics Lab",
+      "teacher": "Engr. Zain",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Introduction to Robotics Lab",
+      "teacher": "Engr. Zain",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Digital Logic Design Lab",
+      "teacher": "Engr. Ummamah",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Digital Logic Design Lab",
+      "teacher": "Engr. Ummamah",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Digital Logic Design Lab",
+      "teacher": "Engr. Ummamah",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    }
+  ],
+  "thursday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Digital Logic Design",
+      "teacher": "Engr. Rida",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Understanding Quran-II",
+      "teacher": "Dr. Rahimullah",
+      "room": "Auditorium",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Engineering Workshop",
+      "teacher": "M Sameer",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Engineering Workshop",
+      "teacher": "M Sameer",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "06:30 PM – 07:30 PM",
+      "subject": "Engineering Workshop",
+      "teacher": "M Sameer",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    }
+  ],
+  "friday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Object Oriented",
+      "teacher": "Amir Sohail",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Object Oriented",
+      "teacher": "Amir Sohail",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Jummah Break",
+      "teacher": "None",
+      "room": "None",
+      "type": "None"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "OOP Lab",
+      "teacher": "Engr. Laiba",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "OOP Lab",
+      "teacher": "Engr. Laiba",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "OOP Lab",
+      "teacher": "Engr. Laiba",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    }
+  ]
+}

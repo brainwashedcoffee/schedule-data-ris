@@ -1,0 +1,173 @@
+{
+  "monday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "AI & Machine Learning",
+      "teacher": "Dr. Saleem",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Swarm Robotics",
+      "teacher": "Engr. Shahab",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "AI & Machine Learning Lab",
+      "teacher": "Amna Batool",
+      "room": "Control Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "AI & Machine Learning Lab",
+      "teacher": "Amna Batool",
+      "room": "Control Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "AI & Machine Learning Lab",
+      "teacher": "Amna Batool",
+      "room": "Control Lab",
+      "type": "Lecture"
+    }
+  ],
+  "tuesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "ESD Lab",
+      "teacher": "Engr. Sohail",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "ESD Lab",
+      "teacher": "Engr. Sohail",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "ESD Lab",
+      "teacher": "Engr. Sohail",
+      "room": "MPI Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Digital Image Processing",
+      "teacher": "Dr. Imran",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Swarm Robotics",
+      "teacher": "Engr. Shahab",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Swarm Robotics",
+      "teacher": "Engr. Shahab",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "AI & Machine Learning",
+      "teacher": "Dr. Saleem",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "AI & Machine Learning",
+      "teacher": "Dr. Saleem",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "ESD",
+      "teacher": "Engr. Sohail",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Digital Image Processing",
+      "teacher": "Dr. Imran",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Digital Image Processing",
+      "teacher": "Dr. Imran",
+      "room": "06-19",
+      "type": "Lecture"
+    }
+  ],
+  "thursday": [
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "DIP Lab",
+      "teacher": "Dr. Imran",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "DIP Lab",
+      "teacher": "Dr. Imran",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "DIP Lab",
+      "teacher": "Dr. Imran",
+      "room": "Controls Lab",
+      "type": "Lecture"
+    }
+  ],
+  "friday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "ESD",
+      "teacher": "Engr. Sohail",
+      "room": "Electronics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "ESD",
+      "teacher": "Engr. Sohail",
+      "room": "Electronics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Jummah Break",
+      "teacher": "None",
+      "room": "None",
+      "type": "None"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Understanding Quran V",
+      "teacher": "None",
+      "room": "Auditorium",
+      "type": "Lecture"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "monday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Robot Modelling & Control",
+      "teacher": "Dr. Nadia",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Robot Modelling & Control",
+      "teacher": "Dr. Nadia",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Robot Modelling and Control Lab",
+      "teacher": "Naima Adnan",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Robot Modelling and Control Lab",
+      "teacher": "Naima Adnan",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Robot Modelling and Control Lab",
+      "teacher": "Naima Adnan",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    }
+  ],
+  "tuesday": [
+    {
+      "time": "08:30 AM – 09:30 AM",
+      "subject": "Human Robot Interaction Lab",
+      "teacher": "Engr. Zeeshan",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "09:30 AM – 10:30 AM",
+      "subject": "Human Robot Interaction Lab",
+      "teacher": "Engr. Zeeshan",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "Human Robot Interaction Lab",
+      "teacher": "Engr. Zeeshan",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Seerah I",
+      "teacher": "Waqas Ahmed",
+      "room": "Auditorium",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Robot Modelling & Control",
+      "teacher": "Dr. Nadia",
+      "room": "06-19",
+      "type": "Lecture"
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Intro to Deep Learning",
+      "teacher": "Dr. Adil",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Human Robot Inter",
+      "teacher": "Dr. Usman T",
+      "room": "05-17",
+      "type": "Lecture"
+    }
+  ],
+  "thursday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Intro to Deep Learning Lab",
+      "teacher": "Munahil A",
+      "room": "Control Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Intro to Deep Learning Lab",
+      "teacher": "Munahil A",
+      "room": "Control Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Intro to Deep Learning Lab",
+      "teacher": "Munahil A",
+      "room": "Control Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Intro to Deep Learning",
+      "teacher": "Dr. Adil",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Intro to Deep Learning",
+      "teacher": "Dr. Adil",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Human Robot Inter",
+      "teacher": "Dr. Usman T",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Human Robot Inter",
+      "teacher": "Dr. Usman T",
+      "room": "05-18",
+      "type": "Lecture"
+    }
+  ],
+  "friday": [
+    {
+      "time": "08:30 AM – 01:30 PM",
+      "subject": "FYP Slot",
+      "teacher": "None",
+      "room": "None",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Jummah Break",
+      "teacher": "None",
+      "room": "None",
+      "type": "None"
+    },
+    {
+      "time": "02:30 PM – 08:30 PM",
+      "subject": "FYP Slot",
+      "teacher": "None",
+      "room": "None",
+      "type": "Lecture"
+    }
+  ]
+}
