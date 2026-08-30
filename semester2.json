@@ -1,30 +1,116 @@
 {
   "monday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Calculus",
+      "teacher": "Kaamran",
+      "room": "04-22",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "English",
+      "teacher": "Sara Saba",
+      "room": "04-21",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "𝗣𝗮𝗸 𝗦𝘁𝘂𝗱𝗶𝗲𝘀 [𝗠𝗮𝗸𝗲𝗨𝗽]",
+      "teacher": "Arshad Naqvi",
+      "room": "01-29",
+      "type": "Lecture"
+    }
   ],
-
-  
   "tuesday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Islamiyat",
+      "teacher": "Haider Rashid Khan",
+      "room": "06-21",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Calculus",
+      "teacher": "Kaamran",
+      "room": "04-22",
+      "type": "Lecture"
+    }
   ],
-
-  
-  "wednesday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
-  ],
-
-  
+  "wednesday": [],
   "thursday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Islamiyat",
+      "teacher": "Haider Rashid Khan",
+      "room": "06-21",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Applied Physics",
+      "teacher": "Engr. Shafique Abbasi",
+      "room": "02-22",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Calculus",
+      "teacher": "Kaamran",
+      "room": "04-22",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Pak Studies",
+      "teacher": "Arshad Naqvi",
+      "room": "01-29",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Computer Sciences",
+      "teacher": "Adam Ali",
+      "room": "03-14",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "A̶r̶a̶b̶i̶c̶ [𝗖𝗔𝗡𝗖𝗘𝗟𝗟𝗘𝗗]",
+      "teacher": "Hafiz Mustafa Kiyani",
+      "room": "02-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Mechanical",
+      "teacher": "Haider Rashid Khan",
+      "room": "05-19",
+      "type": "Lecture"
+    }
   ],
-
-  
   "friday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Editable - SubjectName", "teacher": "Editable - TeacherName", "room": "Editable - RoomNumber", "type": "Lecture" }
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Islamiyat [𝗢𝗡𝗟𝗜𝗡𝗘]",
+      "teacher": "Haider Rashid Khan",
+      "room": "Online",
+      "type": "Online-Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "English [𝗢𝗡𝗟𝗜𝗡𝗘]",
+      "teacher": "Sara Saba",
+      "room": "Online",
+      "type": "Online-Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Pak Studies [𝗢𝗡𝗟𝗜𝗡𝗘]",
+      "teacher": "Arshad Naqvi",
+      "room": "Online",
+      "type": "Online-Lecture"
+    }
   ]
 }
