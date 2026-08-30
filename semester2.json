@@ -2,115 +2,200 @@
   "monday": [
     {
       "time": "11:30 AM – 12:30 PM",
-      "subject": "Calculus",
-      "teacher": "Kaamran",
-      "room": "04-22",
+      "subject": "Circuit Analysis Lab",
+      "teacher": "Engr. Ayesha",
+      "room": "Electronics Lab CE",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
-      "subject": "English",
-      "teacher": "Sara Saba",
-      "room": "04-21",
+      "subject": "Circuit Analysis Lab",
+      "teacher": "Engr. Ayesha",
+      "room": "Electronics Lab CE",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
-      "subject": "𝗣𝗮𝗸 𝗦𝘁𝘂𝗱𝗶𝗲𝘀 [𝗠𝗮𝗸𝗲𝗨𝗽]",
-      "teacher": "Arshad Naqvi",
-      "room": "01-29",
+      "subject": "Circuit Analysis Lab",
+      "teacher": "Engr. Ayesha",
+      "room": "Electronics Lab CE",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Engineering Mechanics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Engineering Ethics",
+      "teacher": "Engr. Zain",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Engineering Ethics",
+      "teacher": "Engr. Zain",
+      "room": "05-18",
       "type": "Lecture"
     }
   ],
   "tuesday": [
     {
       "time": "11:30 AM – 12:30 PM",
-      "subject": "Islamiyat",
-      "teacher": "Haider Rashid Khan",
-      "room": "06-21",
+      "subject": "Engineering Economics",
+      "teacher": "Sadia Mazher",
+      "room": "05-04",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
-      "subject": "Calculus",
-      "teacher": "Kaamran",
-      "room": "04-22",
-      "type": "Lecture"
-    }
-  ],
-  "wednesday": [],
-  "thursday": [
-    {
-      "time": "11:30 AM – 12:30 PM",
-      "subject": "Islamiyat",
-      "teacher": "Haider Rashid Khan",
-      "room": "06-21",
-      "type": "Lecture"
-    },
-    {
-      "time": "12:30 PM – 01:30 PM",
-      "subject": "Applied Physics",
-      "teacher": "Engr. Shafique Abbasi",
-      "room": "02-22",
+      "subject": "Engineering Economics",
+      "teacher": "Sadia Mazher",
+      "room": "05-04",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
-      "subject": "Calculus",
-      "teacher": "Kaamran",
-      "room": "04-22",
-      "type": "Lecture"
-    },
-    {
-      "time": "02:30 PM – 03:30 PM",
-      "subject": "Pak Studies",
-      "teacher": "Arshad Naqvi",
-      "room": "01-29",
+      "subject": "Computer Programming",
+      "teacher": "Engr. Salman Z",
+      "room": "Controls Lab",
       "type": "Lecture"
     },
     {
       "time": "03:30 PM – 04:30 PM",
-      "subject": "Computer Sciences",
-      "teacher": "Adam Ali",
-      "room": "03-14",
+      "subject": "Circuit Analysis",
+      "teacher": "Dr. Asad",
+      "room": "06-19",
       "type": "Lecture"
     },
     {
       "time": "04:30 PM – 05:30 PM",
-      "subject": "A̶r̶a̶b̶i̶c̶ [𝗖𝗔𝗡𝗖𝗘𝗟𝗟𝗘𝗗]",
-      "teacher": "Hafiz Mustafa Kiyani",
-      "room": "02-18",
+      "subject": "Circuit Analysis",
+      "teacher": "Dr. Asad",
+      "room": "06-19",
+      "type": "Lecture"
+    }
+  ],
+  "wednesday": [
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "CP Lab",
+      "teacher": "Engr. Ummamah",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "CP Lab",
+      "teacher": "Engr. Ummamah",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "CP Lab",
+      "teacher": "Engr. Ummamah",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Circuit Analysis",
+      "teacher": "Dr. Asad",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "LA & DE",
+      "teacher": "Engr. Aziz",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "LA & DE",
+      "teacher": "Engr. Aziz",
+      "room": "05-18",
       "type": "Lecture"
     },
     {
       "time": "05:30 PM – 06:30 PM",
-      "subject": "Mechanical",
-      "teacher": "Haider Rashid Khan",
+      "subject": "Fundamentals of Maths II",
+      "teacher": "Dr. Faheem",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "06:30 PM – 07:30 PM",
+      "subject": "Fundamentals of Maths II",
+      "teacher": "Dr. Faheem",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "07:30 PM – 08:30 PM",
+      "subject": "Fundamentals of Maths II",
+      "teacher": "Dr. Faheem",
+      "room": "06-19",
+      "type": "Lecture"
+    }
+  ],
+  "thursday": [
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Computer Programming",
+      "teacher": "Engr. Salman Z",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Computer Programming",
+      "teacher": "Engr. Salman Z",
+      "room": "FYP Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "LA & DE",
+      "teacher": "Engr. Aziz",
       "room": "05-19",
       "type": "Lecture"
     }
   ],
   "friday": [
     {
-      "time": "12:30 PM – 01:30 PM",
-      "subject": "Islamiyat [𝗢𝗡𝗟𝗜𝗡𝗘]",
-      "teacher": "Haider Rashid Khan",
-      "room": "Online",
-      "type": "Online-Lecture"
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "Engineering Mechanics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-04",
+      "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Engineering Mechanics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-04",
+      "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
-      "subject": "English [𝗢𝗡𝗟𝗜𝗡𝗘]",
-      "teacher": "Sara Saba",
-      "room": "Online",
-      "type": "Online-Lecture"
+      "subject": "Jummah Break",
+      "teacher": "None",
+      "room": "None",
+      "type": "None"
     },
     {
-      "time": "02:30 PM – 03:30 PM",
-      "subject": "Pak Studies [𝗢𝗡𝗟𝗜𝗡𝗘]",
-      "teacher": "Arshad Naqvi",
-      "room": "Online",
-      "type": "Online-Lecture"
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Understanding Quran-I",
+      "teacher": "Dr. Rahimullah",
+      "room": "Auditorium",
+      "type": "Lecture"
     }
   ]
 }
