@@ -1,40 +1,201 @@
 {
   "monday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Computing Fundamentals", "teacher": "Amir Sohail", "room": "Room 5-19", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Computing Fundamentals", "teacher": "Amir Sohail", "room": "Room 5-19", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-03", "type": "Lecture" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Computing Fundamentals Lab", "teacher": "Engr. Zeeshan", "room": "Lab 6-01", "type": "Lab" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "Applied Calculus & Analytical Geometry", "teacher": "Engr. Yaseen", "room": "Room 5-03", "type": "Lecture" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Computing Fundamentals",
+      "teacher": "Faisal Shehzad",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Computing Fundamentals",
+      "teacher": "Faisal Shehzad",
+      "room": "02-15",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Functional English",
+      "teacher": "Tooba Asif",
+      "room": "05-03",
+      "type": "Lecture"
+    }
   ],
   "tuesday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Tajweed", "teacher": "Kamran Ayub", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Functional English", "teacher": "Sara Saba", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Fund of Maths I (Only for Pre Med)", "teacher": "Engr. Rana Saqib", "room": "Workshop Lab", "type": "Lab" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Fund of Maths I (Only for Pre Med)", "teacher": "Engr. Rana Saqib", "room": "Workshop Lab", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Fund of Maths I (Only for Pre Med)", "teacher": "Engr. Rana Saqib", "room": "Workshop Lab", "type": "Lab" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Tajweed",
+      "teacher": "Qari Noor ul Islam",
+      "room": "05-03",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Functional English",
+      "teacher": "Tooba Asif",
+      "room": "05-03",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Functional English",
+      "teacher": "Tooba Asif",
+      "room": "05-03",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Engineering Drawing & CAD",
+      "teacher": "Engr. Ayesha",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Engineering Drawing & CAD",
+      "teacher": "Engr. Ayesha",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Engineering Drawing & CAD",
+      "teacher": "Engr. Ayesha",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    }
   ],
   "wednesday": [
-    { "time": "12:30 PM – 01:30 PM", "subject": "Applied Physics", "teacher": "M Ishaq", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Applied Physics", "teacher": "M Ishaq", "room": "Room 5-17", "type": "Lecture" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Engineering Drawing & CAD", "teacher": "Engr. Ifrah", "room": "Computing Lab", "type": "Lab" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Engineering Drawing & CAD", "teacher": "Engr. Ifrah", "room": "Computing Lab", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Engineering Drawing & CAD", "teacher": "Engr. Ifrah", "room": "Computing Lab", "type": "Lab" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Engineering Mechanics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-03",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Applied Physics",
+      "teacher": "M Ishaq",
+      "room": "05-17",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Applied Physics",
+      "teacher": "M Ishaq",
+      "room": "05-17",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Fundamentals of Maths I",
+      "teacher": "Engr. Mudassir",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Fundamentals of Maths I",
+      "teacher": "Engr. Mudassir",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Fundamentals of Maths I",
+      "teacher": "Engr. Mudassir",
+      "room": "Workshop Lab",
+      "type": "Lecture"
+    }
   ],
   "thursday": [
-    { "time": "03:30 PM – 04:30 PM", "subject": "Applied Physics Lab", "teacher": "M Ishaq", "room": "Physics Lab", "type": "Lab" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Applied Physics Lab", "teacher": "M Ishaq", "room": "Physics Lab", "type": "Lab" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "Applied Physics Lab", "teacher": "M Ishaq", "room": "Physics Lab", "type": "Lab" }
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Applied Physics Lab",
+      "teacher": "M Ishaq",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "12:30 PM – 01:30 PM",
+      "subject": "Applied Physics Lab",
+      "teacher": "M Ishaq",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "01:30 PM – 02:30 PM",
+      "subject": "Applied Physics Lab",
+      "teacher": "M Ishaq",
+      "room": "Physics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Computing Fundamentals Lab",
+      "teacher": "Engr. Faisal Shehzad",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Computing Fundamentals Lab",
+      "teacher": "Engr. Faisal Shehzad",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Computing Fundamentals Lab",
+      "teacher": "Engr. Faisal Shehzad",
+      "room": "Computing Lab",
+      "type": "Lecture"
+    }
   ],
   "friday": [
-    { "time": "11:30 AM – 12:30 PM", "subject": "Islamic Studies/Ethics", "teacher": "Tayyaba", "room": "Room 6-19", "type": "Lecture" },
-    { "time": "12:30 PM – 01:30 PM", "subject": "Islamic Studies/Ethics", "teacher": "Tayyaba", "room": "Room 6-19", "type": "Lecture" },
-    { "time": "01:30 PM – 02:30 PM", "subject": "Jummah Break", "teacher": "_", "room": "_", "type": "Break" },
-    { "time": "02:30 PM – 03:30 PM", "subject": "Applied Cal & Analytical", "teacher": "Engr. Yaseen", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "03:30 PM – 04:30 PM", "subject": "Applied Cal & Analytical", "teacher": "Engr. Yaseen", "room": "Room 5-18", "type": "Lecture" },
-    { "time": "04:30 PM – 05:30 PM", "subject": "Ideo & Const", "teacher": "Ruqqaiya Tayyab", "room": "Room 5-04", "type": "Lecture" },
-    { "time": "05:30 PM – 06:30 PM", "subject": "Ideo & Const", "teacher": "Ruqqaiya Tayyab", "room": "Room 5-04", "type": "Lecture" }
+    {
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "Islamic Studies/Ethics",
+      "teacher": "Waqas Ahmed",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Islamic Studies/Ethics",
+      "teacher": "Waqas Ahmed",
+      "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "Engineering Mechanics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "03:30 PM – 04:30 PM",
+      "subject": "Engineering Mechanics",
+      "teacher": "Engr. Muneeb",
+      "room": "05-18",
+      "type": "Lecture"
+    },
+    {
+      "time": "04:30 PM – 05:30 PM",
+      "subject": "Ideology & Constitution",
+      "teacher": "Dr. Maryam",
+      "room": "05-04",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Ideology & Constitution",
+      "teacher": "Dr. Maryam",
+      "room": "05-04",
+      "type": "Lecture"
+    }
   ]
 }
