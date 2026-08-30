@@ -83,21 +83,21 @@
   "wednesday": [
     {
       "time": "11:30 AM – 12:30 PM",
-      "subject": "CP Lab",
+      "subject": "Computer Programming Lab",
       "teacher": "Engr. Ummamah",
       "room": "Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
-      "subject": "CP Lab",
+      "subject": "Computer Programming Lab",
       "teacher": "Engr. Ummamah",
       "room": "Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
-      "subject": "CP Lab",
+      "subject": "Computer Programming Lab",
       "teacher": "Engr. Ummamah",
       "room": "Computing Lab",
       "type": "Lecture"
@@ -111,14 +111,14 @@
     },
     {
       "time": "03:30 PM – 04:30 PM",
-      "subject": "LA & DE",
+      "subject": "Linear Algebra and Differential Equations",
       "teacher": "Engr. Aziz",
       "room": "05-18",
       "type": "Lecture"
     },
     {
       "time": "04:30 PM – 05:30 PM",
-      "subject": "LA & DE",
+      "subject": "Linear Algebra and Differential Equations",
       "teacher": "Engr. Aziz",
       "room": "05-18",
       "type": "Lecture"
@@ -162,7 +162,7 @@
     },
     {
       "time": "02:30 PM – 03:30 PM",
-      "subject": "LA & DE",
+      "subject": "Linear Algebra and Differential Equations",
       "teacher": "Engr. Aziz",
       "room": "05-19",
       "type": "Lecture"
