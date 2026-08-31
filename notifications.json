@@ -1,5 +1,12 @@
 [
     {
+        "id": 2,
+        "title": "Bugs and Suggestions",
+        "body": "If you find any issue whiel using the app, or want to give any suggestion, feel free to leave it to me from teh settings of this app !",
+        "date": "September 01, 2026",
+        "time": "12:00 AM"
+    },
+    {
         "id": 1,
         "title": "Welcome",
         "body": "This is the latest Official Update, and i hope this time its the last time you updated the app mannualy, From now it will be fully automatic. Insha Allah",
