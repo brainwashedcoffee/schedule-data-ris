@@ -2,14 +2,14 @@
   "monday": [
     {
       "time": "11:30 AM – 12:30 PM",
-      "subject": "Computing Fundamentals",
+      "subject": "CF",
       "teacher": "Faisal Shehzad",
       "room": "02-15",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
-      "subject": "Computing Fundamentals",
+      "subject": "CF",
       "teacher": "Faisal Shehzad",
       "room": "02-15",
       "type": "Lecture"
@@ -17,7 +17,7 @@
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Functional English",
-      "teacher": "Tooba Asif",
+      "teacher": "Mehwish Abid",
       "room": "05-03",
       "type": "Lecture"
     }
@@ -33,14 +33,14 @@
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Functional English",
-      "teacher": "Tooba Asif",
+      "teacher": "Mehwish Abid",
       "room": "05-03",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Functional English",
-      "teacher": "Tooba Asif",
+      "teacher": "Mehwish Abid",
       "room": "05-03",
       "type": "Lecture"
     },
@@ -134,21 +134,21 @@
     },
     {
       "time": "03:30 PM – 04:30 PM",
-      "subject": "Computing Fundamentals Lab",
+      "subject": "CF Lab",
       "teacher": "Engr. Faisal Shehzad",
       "room": "Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "04:30 PM – 05:30 PM",
-      "subject": "Computing Fundamentals Lab",
+      "subject": "CF Lab",
       "teacher": "Engr. Faisal Shehzad",
       "room": "Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "05:30 PM – 06:30 PM",
-      "subject": "Computing Fundamentals Lab",
+      "subject": "CF Lab",
       "teacher": "Engr. Faisal Shehzad",
       "room": "Computing Lab",
       "type": "Lecture"
@@ -158,14 +158,14 @@
     {
       "time": "10:30 AM – 11:30 AM",
       "subject": "Islamic Studies/Ethics",
-      "teacher": "Waqas Ahmed",
+      "teacher": "M. Awab",
       "room": "06-19",
       "type": "Lecture"
     },
     {
       "time": "11:30 AM – 12:30 PM",
       "subject": "Islamic Studies/Ethics",
-      "teacher": "Waqas Ahmed",
+      "teacher": "M. Awab",
       "room": "06-19",
       "type": "Lecture"
     },
