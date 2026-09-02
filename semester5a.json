@@ -34,6 +34,13 @@
       "teacher": "Dr. Usman",
       "room": "Comm Lab",
       "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
+      "subject": "Communication Systems",
+      "teacher": "Dr. Junaid",
+      "room": "05-19",
+      "type": "Lecture"
     }
   ],
   "tuesday": [
@@ -60,6 +67,13 @@
     },
     {
       "time": "04:30 PM – 05:30 PM",
+      "subject": "Communication Systems",
+      "teacher": "Dr. Junaid",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "05:30 PM – 06:30 PM",
       "subject": "Communication Systems",
       "teacher": "Dr. Junaid",
       "room": "05-19",
