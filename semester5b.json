@@ -17,14 +17,14 @@
     {
       "time": "02:30 PM – 03:30 PM",
       "subject": "Communication Systems",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Imtiaz",
       "room": "05-03",
       "type": "Lecture"
     },
     {
       "time": "03:30 PM – 04:30 PM",
       "subject": "Communication Systems",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Imtiaz",
       "room": "05-03",
       "type": "Lecture"
     }
@@ -56,13 +56,6 @@
       "subject": "Sensors and Actuators",
       "teacher": "Dr. Usman",
       "room": "Robotics Lab",
-      "type": "Lecture"
-    },
-    {
-      "time": "03:30 PM – 04:30 PM",
-      "subject": "Communication Systems",
-      "teacher": "Engr. Umair",
-      "room": "05-19",
       "type": "Lecture"
     },
     {
@@ -126,6 +119,13 @@
   ],
   "thursday": [
     {
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "Communication Systems",
+      "teacher": "Dr. Imtiaz",
+      "room": "05-19",
+      "type": "Lecture"
+    },
+    {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Robotics System and Progg",
       "teacher": "Dr. Sheryar",
@@ -158,21 +158,21 @@
     {
       "time": "10:30 AM – 11:30 AM",
       "subject": "Communication System Lab",
-      "teacher": "None",
+      "teacher": "Faraz Ahmed",
       "room": "Comm Lab",
       "type": "Lecture"
     },
     {
       "time": "11:30 AM – 12:30 PM",
       "subject": "Communication System Lab",
-      "teacher": "None",
+      "teacher": "Faraz Ahmed",
       "room": "Comm Lab",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Communication System Lab",
-      "teacher": "None",
+      "teacher": "Faraz Ahmed",
       "room": "Comm Lab",
       "type": "Lecture"
     },
