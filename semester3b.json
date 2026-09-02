@@ -17,7 +17,7 @@
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Object Oriented",
-      "teacher": "Amir Sohail",
+      "teacher": "Faisal Zia",
       "room": "02-15",
       "type": "Lecture"
     },
@@ -31,14 +31,14 @@
     {
       "time": "03:30 PM – 04:30 PM",
       "subject": "Comm Skills",
-      "teacher": "Zareen",
+      "teacher": "Sara Saba",
       "room": "FYP Lab",
       "type": "Lecture"
     },
     {
       "time": "04:30 PM – 05:30 PM",
       "subject": "Comm Skills",
-      "teacher": "Zareen",
+      "teacher": "Sara Saba",
       "room": "FYP Lab",
       "type": "Lecture"
     }
@@ -165,14 +165,14 @@
     {
       "time": "11:30 AM – 12:30 PM",
       "subject": "Object Oriented",
-      "teacher": "Amir Sohail",
+      "teacher": "Faisal Zia",
       "room": "02-15",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Object Oriented",
-      "teacher": "Amir Sohail",
+      "teacher": "Faisal Zia",
       "room": "02-15",
       "type": "Lecture"
     },
