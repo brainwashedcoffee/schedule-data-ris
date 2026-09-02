@@ -31,14 +31,14 @@
     {
       "time": "03:30 PM – 04:30 PM",
       "subject": "Comm Skills",
-      "teacher": "Zareen",
+      "teacher": "Sara Saba",
       "room": "EMS Lab",
       "type": "Lecture"
     },
     {
       "time": "04:30 PM – 05:30 PM",
       "subject": "Comm Skills",
-      "teacher": "Zareen",
+      "teacher": "Sara Saba",
       "room": "EMS Lab",
       "type": "Lecture"
     }
@@ -158,21 +158,21 @@
     {
       "time": "10:30 AM – 11:30 AM",
       "subject": "OOP Lab",
-      "teacher": "None",
+      "teacher": "Asma Kausar",
       "room": "Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "11:30 AM – 12:30 PM",
       "subject": "OOP Lab",
-      "teacher": "None",
+      "teacher": "Asma Kausar",
       "room": "Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "OOP Lab",
-      "teacher": "None",
+      "teacher": "Asma Kausar",
       "room": "Computing Lab",
       "type": "Lecture"
     },
