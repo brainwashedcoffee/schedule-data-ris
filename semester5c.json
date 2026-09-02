@@ -3,14 +3,14 @@
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Communication Systems",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Khawar",
       "room": "Comm Lab",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Communication Systems",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Khawar",
       "room": "Comm Lab",
       "type": "Lecture"
     },
@@ -61,7 +61,7 @@
     {
       "time": "02:30 PM – 03:30 PM",
       "subject": "Communication Systems",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Khawar",
       "room": "05-04",
       "type": "Lecture"
     },
@@ -186,21 +186,21 @@
     {
       "time": "02:30 PM – 03:30 PM",
       "subject": "Communication System Lab",
-      "teacher": "None",
+      "teacher": "Faraz Ahmed",
       "room": "Comm Lab",
       "type": "Lecture"
     },
     {
       "time": "03:30 PM – 04:30 PM",
       "subject": "Communication System Lab",
-      "teacher": "None",
+      "teacher": "Faraz Ahmed",
       "room": "Comm Lab",
       "type": "Lecture"
     },
     {
       "time": "04:30 PM – 05:30 PM",
       "subject": "Communication System Lab",
-      "teacher": "None",
+      "teacher": "Faraz Ahmed",
       "room": "Comm Lab",
       "type": "Lecture"
     }
