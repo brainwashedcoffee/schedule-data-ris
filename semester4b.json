@@ -41,13 +41,6 @@
       "teacher": "Dr. Bilal",
       "room": "06-19",
       "type": "Lecture"
-    },
-    {
-      "time": "05:30 PM – 06:30 PM",
-      "subject": "Principles of Management",
-      "teacher": "Dr. Bilal",
-      "room": "06-19",
-      "type": "Lecture"
     }
   ],
   "tuesday": [
@@ -68,7 +61,7 @@
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Computer Communication & Networks",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Hassan",
       "room": "06-19",
       "type": "Lecture"
     },
@@ -91,14 +84,14 @@
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Computer Communication & Networks",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Hassan",
       "room": "05-04",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Computer Communication & Networks",
-      "teacher": "Engr. Umair",
+      "teacher": "Dr. Hassan",
       "room": "05-04",
       "type": "Lecture"
     },
@@ -144,13 +137,6 @@
       "subject": "Understanding Quran-III",
       "teacher": "Dr. Rahimullah",
       "room": "Auditorium",
-      "type": "Lecture"
-    },
-    {
-      "time": "05:30 PM – 06:30 PM",
-      "subject": "Complex Variable & Transforms",
-      "teacher": "Dr. Saqib",
-      "room": "05-17",
       "type": "Lecture"
     }
   ],
