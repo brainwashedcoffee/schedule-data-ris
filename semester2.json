@@ -27,20 +27,6 @@
       "teacher": "Engr. Muneeb",
       "room": "05-18",
       "type": "Lecture"
-    },
-    {
-      "time": "03:30 PM – 04:30 PM",
-      "subject": "Engineering Ethics",
-      "teacher": "Engr. Zain",
-      "room": "05-18",
-      "type": "Lecture"
-    },
-    {
-      "time": "04:30 PM – 05:30 PM",
-      "subject": "Engineering Ethics",
-      "teacher": "Engr. Zain",
-      "room": "05-18",
-      "type": "Lecture"
     }
   ],
   "tuesday": [
@@ -85,21 +71,21 @@
       "time": "11:30 AM – 12:30 PM",
       "subject": "Computer Programming Lab",
       "teacher": "Engr. Ummamah",
-      "room": "Floor 5-Computing Lab",
+      "room": "Level 5 - Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Computer Programming Lab",
       "teacher": "Engr. Ummamah",
-      "room": "Floor 5-Computing Lab",
+      "room": "Level 5 - Computing Lab",
       "type": "Lecture"
     },
     {
       "time": "01:30 PM – 02:30 PM",
       "subject": "Computer Programming Lab",
       "teacher": "Engr. Ummamah",
-      "room": "Floor 5-Computing Lab",
+      "room": "Level 5 - Computing Lab",
       "type": "Lecture"
     },
     {
@@ -146,6 +132,20 @@
     }
   ],
   "thursday": [
+    {
+      "time": "09:30 AM – 10:30 AM",
+      "subject": "Engineering Ethics",
+      "teacher": "Engr. Zain",
+      "room": "Level 5 - Electronics Lab",
+      "type": "Lecture"
+    },
+    {
+      "time": "10:30 AM – 11:30 AM",
+      "subject": "Engineering Ethics",
+      "teacher": "Engr. Zain",
+      "room": "Level 5 - Electronics Lab",
+      "type": "Lecture"
+    },
     {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Computer Programming",
