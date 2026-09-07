@@ -1,10 +1,17 @@
 {
   "monday": [
     {
-      "time": "11:30 AM – 12:30 PM",
+      "time": "10:30 AM – 11:30 AM",
       "subject": "DLD",
       "teacher": "Engr. Rida",
       "room": "06-19",
+      "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "OOP",
+      "teacher": "Subaas Bilal",
+      "room": "Physics Lab",
       "type": "Lecture"
     },
     {
@@ -16,27 +23,20 @@
     },
     {
       "time": "01:30 PM – 02:30 PM",
-      "subject": "OOP",
-      "teacher": "Subaas Bilal",
-      "room": "Physics Lab",
-      "type": "Lecture"
-    },
-    {
-      "time": "02:30 PM – 03:30 PM",
       "subject": "Probability and Statistics",
       "teacher": "Engr. Muneeb",
       "room": "05-04",
       "type": "Lecture"
     },
     {
-      "time": "03:30 PM – 04:30 PM",
+      "time": "02:30 PM – 03:30 PM",
       "subject": "Comm Skills",
       "teacher": "Sara Saba",
       "room": "EMS Lab",
       "type": "Lecture"
     },
     {
-      "time": "04:30 PM – 05:30 PM",
+      "time": "03:30 PM – 04:30 PM",
       "subject": "Comm Skills",
       "teacher": "Sara Saba",
       "room": "EMS Lab",
