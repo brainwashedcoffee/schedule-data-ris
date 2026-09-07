@@ -45,6 +45,13 @@
   ],
   "tuesday": [
     {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "Introduction to Robotics Lab",
+      "teacher": "Engr. Zain",
+      "room": "Robotics Lab",
+      "type": "Lecture"
+    },
+    {
       "time": "12:30 PM – 01:30 PM",
       "subject": "Introduction to Robotics Lab",
       "teacher": "Engr. Zain",
@@ -53,13 +60,6 @@
     },
     {
       "time": "01:30 PM – 02:30 PM",
-      "subject": "Introduction to Robotics Lab",
-      "teacher": "Engr. Zain",
-      "room": "Robotics Lab",
-      "type": "Lecture"
-    },
-    {
-      "time": "02:30 PM – 03:30 PM",
       "subject": "Introduction to Robotics Lab",
       "teacher": "Engr. Zain",
       "room": "Robotics Lab",
