@@ -38,6 +38,13 @@
       "type": "Lecture"
     },
     {
+      "time": "02:30 PM – 03:30 PM",
+      "subject": "1 HOUR BREAK",
+      "teacher": "ㅤ",
+      "room": "ㅤ",
+      "type": "ㅤ"
+    },
+    {
       "time": "03:30 PM – 04:30 PM",
       "subject": "Circuit Analysis",
       "teacher": "Dr. Asad",
@@ -131,6 +138,13 @@
       "teacher": "Engr. Zain",
       "room": "Level 5 - Electronics Lab",
       "type": "Lecture"
+    },
+    {
+      "time": "11:30 AM – 12:30 PM",
+      "subject": "1 HOUR BREAK",
+      "teacher": "ㅤ",
+      "room": "ㅤ",
+      "type": "ㅤ"
     },
     {
       "time": "12:30 PM – 01:30 PM",
