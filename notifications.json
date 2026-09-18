@@ -1,16 +1,37 @@
 [
     {
-        "id": 7,
-        "title": "Suggestion Addressed",
+        "id": 5,
+        "title": "Suggestion by Saad (Beta Tester)",
+        "body": "A suggestion reported by Saad has been successfully reviewed and implemented.\n\nThank you for helping improve the app - please feel free to continue reporting.",
+        "date": "September 05, 2026",
+        "time": "12:00 AM"
+    },
+    {
+        "id": 4,
+        "title": "Suggestion by Toheed",
         "body": "A suggestion regarding class timings, reported by Toheed Imran, has been successfully reviewed and resolved.",
         "date": "September 04, 2026",
         "time": "12:00 AM"
     },
     {
-        "id": 6,
-        "title": "Suggestion Addressed",
+        "id": 3,
+        "title": "Suggestion by Aun",
         "body": "A suggestion regarding class timings, reported by Aun Abbas, has been successfully reviewed and implemented.",
         "date": "September 03, 2026",
         "time": "12:00 AM"
+    },
+    {
+        "id": 2,
+        "title": "Bugs and Suggestions",
+        "body": "If you encounter any issue while using the app, or would like to share a suggestion, please feel free to send it to me through the Report option in Settings.\n\nIf the app is not responding, please use the RESET option in Settings to restore it.",
+        "date": "September 01, 2026",
+        "time": "12:00 AM"
+    },
+    {
+        "id": 1,
+        "title": "Welcome",
+        "body": "Welcome to the latest official update. This release marks the final manual update — from now on, everything will be fully automatic.\n\nInsha Allah.",
+        "date": "August 31, 2026",
+        "time": "05:00 AM"
     }
 ]
