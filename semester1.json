@@ -20,13 +20,6 @@
       "teacher": "Mehwish Abid",
       "room": "05-03",
       "type": "Lecture"
-    },
-    {
-      "time": "12:00 AM – 2:00 AM",
-      "subject": "TEST",
-      "teacher": "TEST",
-      "room": "NONE",
-      "type": "Lecture"
     }
   ],
   "tuesday": [
