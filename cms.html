@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSRIS CMS</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0d1117; --surface: #161b22; --surface-2: #21262d; --surface-3: #30363d;
+    --border: #30363d; --text: #e6edf3; --muted: #8b949e;
+    --accent: #58a6ff; --accent-hover: #79c0ff;
+    --success: #3fb950; --danger: #f85149; --warning: #d29922;
+    --radius: 10px; --radius-sm: 6px;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; line-height: 1.5;
+  }
+  button { font-family: inherit; cursor: pointer; border: none; border-radius: var(--radius-sm);
+    padding: 8px 14px; font-size: 13px; font-weight: 500; transition: 0.15s; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  input, select, textarea {
+    width: 100%; padding: 9px 12px; background: var(--surface-2);
+    border: 1px solid var(--border); border-radius: var(--radius-sm);
+    color: var(--text); font-family: inherit; font-size: 13px; outline: none;
+    transition: border-color 0.15s;
+  }
+  input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+  textarea { resize: vertical; min-height: 80px; font-family: inherit; }
+  label { display: block; font-size: 12px; font-weight: 600; color: var(--muted);
+    margin: 12px 0 5px; text-transform: uppercase; letter-spacing: 0.4px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  #loginView { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  .login-card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 32px; width: 100%; max-width: 460px; }
+  .login-card h1 { font-size: 22px; margin-bottom: 4px; }
+  .login-card .sub { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+  .login-card details { margin-top: 20px; font-size: 12px; color: var(--muted); }
+  .login-card details summary { cursor: pointer; color: var(--accent); font-weight: 500; }
+  .login-card details ol { margin: 10px 0 0 20px; line-height: 1.7; }
+  .login-card details code { background: var(--surface-2); padding: 1px 5px; border-radius: 4px; font-size: 11px; }
+  .btn-primary { background: var(--accent); color: #0d1117; font-weight: 600; }
+  .btn-primary:hover:not(:disabled) { background: var(--accent-hover); }
+  .btn-ghost { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); }
+  .btn-ghost:hover:not(:disabled) { background: var(--surface-3); }
+  .btn-danger { background: var(--danger); color: white; }
+  .btn-danger:hover:not(:disabled) { background: #ff6b63; }
+  .full { width: 100%; padding: 11px; font-size: 14px; margin-top: 20px; }
+
+  #mainView { display: none; min-height: 100vh; flex-direction: column; }
+  header { background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 12px 20px; display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 50; }
+  header .brand { display: flex; align-items: center; gap: 12px; }
+  header .brand strong { font-size: 15px; }
+  header .brand .repo { color: var(--muted); font-size: 12px;
+    background: var(--surface-2); padding: 3px 9px; border-radius: 20px;
+    border: 1px solid var(--border); font-family: ui-monospace, monospace; }
+  header .actions { display: flex; gap: 8px; }
+
+  nav.tabs { background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 0 20px; display: flex; gap: 4px; }
+  nav.tabs button { background: none; color: var(--muted); padding: 12px 16px;
+    border-radius: 0; border-bottom: 2px solid transparent; font-size: 13px; }
+  nav.tabs button:hover { color: var(--text); }
+  nav.tabs button.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 600; }
+
+  main { flex: 1; max-width: 1100px; width: 100%; margin: 0 auto; padding: 20px; }
+  section { display: none; }
+  section.active { display: block; }
+
+  .toolbar { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+  .toolbar select { max-width: 260px; }
+  .toolbar .file-path { color: var(--muted); font-family: ui-monospace, monospace; font-size: 12px; }
+  .toolbar .spacer { flex: 1; }
+
+  .day-tabs { display: flex; gap: 4px; background: var(--surface); padding: 4px;
+    border-radius: var(--radius); border: 1px solid var(--border); margin-bottom: 16px; overflow-x: auto; }
+  .day-tabs button { flex: 1; min-width: 70px; background: transparent; color: var(--muted);
+    padding: 9px 12px; font-size: 13px; }
+  .day-tabs button:hover { color: var(--text); background: var(--surface-2); }
+  .day-tabs button.active { background: var(--surface-3); color: var(--text); font-weight: 600; }
+  .day-tabs button .count { font-size: 10px; background: var(--accent); color: #0d1117;
+    padding: 1px 6px; border-radius: 10px; margin-left: 6px; font-weight: 700; }
+
+  .class-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .class-item { display: flex; align-items: center; gap: 12px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 12px 14px; transition: 0.15s; }
+  .class-item:hover { border-color: var(--accent); }
+  .class-item .time { font-family: ui-monospace, monospace; font-size: 12px;
+    color: var(--accent); min-width: 145px; font-weight: 600; }
+  .class-item .body { flex: 1; min-width: 0; }
+  .class-item .subject { font-weight: 600; font-size: 14px; margin-bottom: 2px; }
+  .class-item .meta { font-size: 12px; color: var(--muted); }
+  .class-item .actions { display: flex; gap: 4px; }
+  .class-item .actions button { background: var(--surface-2); color: var(--muted);
+    padding: 6px 9px; font-size: 12px; line-height: 1; min-width: 30px; }
+  .class-item .actions button:hover { background: var(--surface-3); color: var(--text); }
+  .class-item .actions button.danger:hover { background: var(--danger); color: white; }
+
+  .empty { text-align: center; padding: 40px 20px; color: var(--muted);
+    background: var(--surface); border: 1px dashed var(--border);
+    border-radius: var(--radius); font-size: 13px; }
+
+  .save-bar { display: flex; align-items: center; gap: 12px; justify-content: flex-end;
+    padding: 16px 0; border-top: 1px solid var(--border); margin-top: 20px; }
+  .save-bar .dirty { color: var(--warning); font-size: 12px; margin-right: auto; }
+
+  .notif-item { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px 16px; margin-bottom: 8px; }
+  .notif-item .head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .notif-item .id { font-size: 11px; background: var(--accent); color: #0d1117;
+    padding: 2px 8px; border-radius: 10px; font-weight: 700; font-family: ui-monospace, monospace; }
+  .notif-item .title { font-weight: 600; flex: 1; }
+  .notif-item .date { font-size: 11px; color: var(--muted); }
+  .notif-item .body { font-size: 13px; color: var(--muted); white-space: pre-wrap;
+    word-break: break-word; margin-bottom: 10px; max-height: 80px; overflow: hidden; }
+  .notif-item .actions { display: flex; gap: 6px; justify-content: flex-end; }
+
+  .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+    z-index: 100; align-items: center; justify-content: center; padding: 20px; }
+  .modal.show { display: flex; }
+  .modal-content { background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 24px; width: 100%; max-width: 520px;
+    max-height: 90vh; overflow-y: auto; }
+  .modal-content h2 { font-size: 17px; margin-bottom: 16px; }
+  .modal-content .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+
+  #toast { position: fixed; bottom: 24px; right: 24px; padding: 12px 18px;
+    border-radius: var(--radius); font-size: 13px; font-weight: 500; color: white;
+    background: var(--surface-3); border: 1px solid var(--border); z-index: 200;
+    transform: translateY(120%); transition: transform 0.3s; max-width: 380px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+  #toast.show { transform: translateY(0); }
+  #toast.success { background: var(--success); color: #0d1117; border-color: var(--success); }
+  #toast.error { background: var(--danger); border-color: var(--danger); }
+  #toast.info { background: var(--accent); color: #0d1117; border-color: var(--accent); }
+
+  .loader { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite;
+    vertical-align: middle; margin-right: 6px; }
+  .btn-primary .loader { border-color: rgba(13,17,23,0.3); border-top-color: #0d1117; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 640px) {
+    main { padding: 12px; }
+    .class-item { flex-wrap: wrap; }
+    .class-item .time { min-width: auto; width: 100%; margin-bottom: 4px; }
+    header .brand .repo { display: none; }
+    .modal-content .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div id="loginView">
+  <div class="login-card">
+    <h1>BSRIS CMS</h1>
+    <div class="sub">Content Management System for schedule-data-ris</div>
+    <form id="loginForm">
+      <label for="tokenInput">GitHub Personal Access Token</label>
+      <input type="password" id="tokenInput" placeholder="github_pat_..." autocomplete="off" required>
+
+      <label for="repoInput">Repository</label>
+      <input type="text" id="repoInput" value="brainwashedcoffee/schedule-data-ris" required>
+
+      <label for="branchInput">Branch</label>
+      <input type="text" id="branchInput" value="main" required>
+
+      <label style="display:flex;align-items:center;gap:8px;text-transform:none;font-weight:400;margin-top:14px;">
+        <input type="checkbox" id="rememberInput" style="width:auto;margin:0;">
+        <span>Remember token on this device</span>
+      </label>
+
+      <button type="submit" class="btn-primary full" id="connectBtn">Connect to GitHub</button>
+      <div id="loginError" style="color:var(--danger);font-size:12px;margin-top:12px;display:none;"></div>
+    </form>
+
+    <details>
+      <summary>How do I get a token?</summary>
+      <ol>
+        <li>Open <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">GitHub → Fine-grained tokens</a></li>
+        <li>Click <b>Generate new token</b></li>
+        <li>Repository access → <b>Only select repositories</b> → <code>schedule-data-ris</code></li>
+        <li>Permissions → Repository permissions → <b>Contents: Read and write</b></li>
+        <li>Generate, copy, paste above</li>
+      </ol>
+      <p style="margin-top:10px;">Your token never leaves your browser. It is sent only to <code>api.github.com</code>.</p>
+    </details>
+  </div>
+</div>
+
+<div id="mainView">
+  <header>
+    <div class="brand">
+      <strong>BSRIS CMS</strong>
+      <span class="repo" id="repoLabel">—</span>
+    </div>
+    <div class="actions">
+      <button class="btn-ghost" id="refreshBtn" title="Pull latest from GitHub">↻ Refresh</button>
+      <button class="btn-ghost" id="disconnectBtn">Disconnect</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="active" data-tab="schedules">📅 Schedules</button>
+    <button data-tab="notifications">🔔 Notifications</button>
+  </nav>
+
+  <main>
+    <section id="schedulesTab" class="active">
+      <div class="toolbar">
+        <select id="semesterSelect"></select>
+        <span class="file-path" id="filePath">—</span>
+        <div class="spacer"></div>
+        <button class="btn-ghost" id="importBtn" title="Copy schedule from another semester">⇩ Import from…</button>
+      </div>
+      <div class="day-tabs" id="dayTabs"></div>
+      <div class="class-list" id="classList"></div>
+      <button class="btn-ghost" id="addClassBtn" style="width:100%;">+ Add Class</button>
+      <div class="save-bar">
+        <span class="dirty" id="dirtyIndicator"></span>
+        <button class="btn-primary" id="saveScheduleBtn">Save to GitHub</button>
+      </div>
+    </section>
+
+    <section id="notificationsTab">
+      <div class="toolbar">
+        <span class="file-path">notifications.json</span>
+        <div class="spacer"></div>
+        <button class="btn-ghost" id="addNotifBtn">+ Add Notification</button>
+      </div>
+      <div id="notificationList"></div>
+      <div class="save-bar">
+        <span class="dirty" id="notifDirtyIndicator"></span>
+        <button class="btn-primary" id="saveNotifsBtn">Save to GitHub</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="classModal">
+  <div class="modal-content">
+    <h2 id="classModalTitle">Add Class</h2>
+    <label>Subject *</label>
+    <input type="text" id="classSubject" placeholder="e.g. Physics">
+    <label>Teacher</label>
+    <input type="text" id="classTeacher" placeholder="e.g. Amir Sohail">
+    <div class="grid-2">
+      <div>
+        <label>Start time</label>
+        <input type="time" id="classStart">
+      </div>
+      <div>
+        <label>End time</label>
+        <input type="time" id="classEnd">
+      </div>
+    </div>
+    <label>Room</label>
+    <input type="text" id="classRoom" placeholder="e.g. Room 5-19">
+    <label>Type</label>
+    <select id="classType">
+      <option>Lecture</option>
+      <option>Lab</option>
+      <option>Break</option>
+      <option>Tutorial</option>
+      <option>None</option>
+    </select>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="classModalCancel">Cancel</button>
+      <button class="btn-primary" id="classModalSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="notifModal">
+  <div class="modal-content">
+    <h2 id="notifModalTitle">Add Notification</h2>
+    <label>Title *</label>
+    <input type="text" id="notifTitle" placeholder="e.g. Class Dismissed">
+    <label>Body *</label>
+    <textarea id="notifBody" rows="6" placeholder="It is notified that…"></textarea>
+    <div class="grid-2">
+      <div>
+        <label>Date</label>
+        <input type="text" id="notifDate" placeholder="September 18, 2026">
+      </div>
+      <div>
+        <label>Time</label>
+        <input type="text" id="notifTime" placeholder="4:00 PM">
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="notifModalCancel">Cancel</button>
+      <button class="btn-primary" id="notifModalSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="importModal">
+  <div class="modal-content">
+    <h2>Import Schedule</h2>
+    <p style="color:var(--muted);font-size:13px;margin-bottom:12px;">
+      Replaces the current semester's schedule with a copy from another semester.
+      You still need to press <b>Save to GitHub</b> afterwards.
+    </p>
+    <label>Copy from</label>
+    <select id="importSource"></select>
+    <div class="modal-actions">
+      <button class="btn-ghost" id="importCancel">Cancel</button>
+      <button class="btn-primary" id="importConfirm">Import</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+'use strict';
+
+// ═══════════════════════════════════════════════════════════════════════
+//  CONFIG — exactly the 13 semester files + notifications.json
+// ═══════════════════════════════════════════════════════════════════════
+const SEMESTER_NAMES = [
+  'BSRIS 1-A',
+  'BSRIS 2-A',
+  'BSRIS 3-A', 'BSRIS 3-B',
+  'BSRIS 4-A', 'BSRIS 4-B',
+  'BSRIS 5-A', 'BSRIS 5-B', 'BSRIS 5-C',
+  'BSRIS 6-A', 'BSRIS 6-B',
+  'BSRIS 7-A', 'BSRIS 7-B'
+];
+const SEMESTER_FILES = {
+  1:'semester1.json',
+  2:'semester2.json',
+  3:'semester3a.json',  4:'semester3b.json',
+  5:'semester4a.json',  6:'semester4b.json',
+  7:'semester5a.json',  8:'semester5b.json',  9:'semester5c.json',
+  10:'semester6a.json', 11:'semester6b.json',
+  12:'semester7a.json', 13:'semester7b.json'
+};
+const NOTIF_FILE = 'notifications.json';
+const DAYS = ['monday','tuesday','wednesday','thursday','friday'];
+
+// Indentation per file type (matches your existing files so diffs stay clean)
+const SCHEDULE_INDENT = 2;
+const NOTIF_INDENT = 4;
+
+// ═══════════════════════════════════════════════════════════════════════
+//  STATE
+// ═══════════════════════════════════════════════════════════════════════
+const state = {
+  token:'', owner:'', repo:'', branch:'main',
+  currentSemester: 1,
+  currentSha: null,
+  scheduleData: {},
+  currentDay: 'monday',
+  scheduleDirty: false,
+  notifications: [],
+  notifSha: null,
+  notifsDirty: false,
+  editingClassIndex: -1,
+  editingNotifIndex: -1
+};
+
+// ═══════════════════════════════════════════════════════════════════════
+//  DOM
+// ═══════════════════════════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+const loginView = $('loginView');
+const mainView = $('mainView');
+const loginForm = $('loginForm');
+const loginError = $('loginError');
+const repoLabel = $('repoLabel');
+const semesterSelect = $('semesterSelect');
+const filePath = $('filePath');
+const dayTabs = $('dayTabs');
+const classList = $('classList');
+const dirtyIndicator = $('dirtyIndicator');
+const notifDirtyIndicator = $('notifDirtyIndicator');
+const notificationList = $('notificationList');
+const toast = $('toast');
+
+// ═══════════════════════════════════════════════════════════════════════
+//  UTILITIES
+// ═══════════════════════════════════════════════════════════════════════
+function b64Encode(str) {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+  return btoa(binary);
+}
+function b64Decode(b64) {
+  const binary = atob(b64.replace(/\s/g, ''));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function showToast(msg, type = 'info', duration = 3000) {
+  toast.textContent = msg;
+  toast.className = type + ' show';
+  clearTimeout(toast._t);
+  toast._t = setTimeout(() => toast.classList.remove('show'), duration);
+}
+function setLoading(btn, loading, label) {
+  if (loading) {
+    btn.dataset.original = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="loader"></span>' + (label || 'Loading…');
+  } else {
+    btn.disabled = false;
+    btn.innerHTML = btn.dataset.original || label || 'Done';
+  }
+}
+function to12h(t) {
+  if (!t) return '';
+  const [h, m] = t.split(':').map(Number);
+  const period = h >= 12 ? 'PM' : 'AM';
+  const hour12 = h % 12 || 12;
+  return `${hour12}:${String(m).padStart(2,'0')} ${period}`;
+}
+// Convert "11:30 AM – 12:30 PM" into ["11:30","12:30"] (24h)
+function parseTimeRange(str) {
+  if (!str) return ['', ''];
+  const parts = str.replace(/[–—-]/g, '–').split('–').map(s => s.trim());
+  if (parts.length !== 2) return ['', ''];
+  return parts.map(p => {
+    const m = p.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+    if (!m) return '';
+    let h = parseInt(m[1], 10);
+    const min = m[2];
+    const ap = (m[3] || '').toUpperCase();
+    if (ap === 'PM' && h !== 12) h += 12;
+    if (ap === 'AM' && h === 12) h = 0;
+    return `${String(h).padStart(2,'0')}:${min}`;
+  });
+}
+function formatTimeRange(start, end) {
+  if (!start || !end) return '';
+  return `${to12h(start)} – ${to12h(end)}`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+//  GITHUB API
+// ═══════════════════════════════════════════════════════════════════════
+async function ghRequest(path, opts = {}) {
+  const res = await fetch(`https://api.github.com${path}`, {
+    ...opts,
+    headers: {
+      'Authorization': `Bearer ${state.token}`,
+      'Accept': 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...(opts.headers || {})
+    }
+  });
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    let msg = `HTTP ${res.status}`;
+    try { const j = await res.json(); msg = j.message || msg; } catch {}
+    if (res.status === 401) msg = 'Bad token — check it has not expired.';
+    if (res.status === 403) msg = 'Forbidden — token needs "Contents: Read and write".';
+    throw new Error(msg);
+  }
+  return await res.json();
+}
+async function ghGetFile(path) {
+  return await ghRequest(`/repos/${state.owner}/${state.repo}/contents/${path}?ref=${state.branch}`);
+}
+async function ghPutFile(path, contentStr, sha, message) {
+  const body = {
+    message: message || `Update ${path} via BSRIS CMS`,
+    content: b64Encode(contentStr),
+    branch: state.branch
+  };
+  if (sha) body.sha = sha;
+  return await ghRequest(`/repos/${state.owner}/${state.repo}/contents/${path}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+//  LOGIN
+// ═══════════════════════════════════════════════════════════════════════
+function loadSavedToken() {
+  const saved = localStorage.getItem('bsris-cms-token');
+  if (!saved) return;
+  try {
+    const obj = JSON.parse(saved);
+    $('tokenInput').value = obj.token || '';
+    $('repoInput').value = obj.repo || 'brainwashedcoffee/schedule-data-ris';
+    $('branchInput').value = obj.branch || 'main';
+    $('rememberInput').checked = true;
+  } catch {}
+}
+
+loginForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  loginError.style.display = 'none';
+  const token = $('tokenInput').value.trim();
+  const repoFull = $('repoInput').value.trim();
+  const branch = $('branchInput').value.trim() || 'main';
+
+  if (!token || !repoFull.includes('/')) {
+    loginError.textContent = 'Enter a valid token and repository (owner/repo).';
+    loginError.style.display = 'block';
+    return;
+  }
+  const [owner, repo] = repoFull.split('/');
+
+  const btn = $('connectBtn');
+  setLoading(btn, true, 'Verifying…');
+
+  try {
+    const test = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28'
+      }
+    });
+    if (!test.ok) {
+      const j = await test.json().catch(() => ({}));
+      throw new Error(j.message || `HTTP ${test.status}`);
+    }
+
+    state.token = token;
+    state.owner = owner;
+    state.repo = repo;
+    state.branch = branch;
+
+    if ($('rememberInput').checked) {
+      localStorage.setItem('bsris-cms-token', JSON.stringify({ token, repo: repoFull, branch }));
+    } else {
+      localStorage.removeItem('bsris-cms-token');
+    }
+
+    repoLabel.textContent = `${owner}/${repo} @ ${branch}`;
+    loginView.style.display = 'none';
+    mainView.style.display = 'flex';
+
+    initSemesterSelect();
+    await loadSemester(state.currentSemester);
+    await loadNotifications();
+  } catch (err) {
+    loginError.textContent = '❌ ' + err.message;
+    loginError.style.display = 'block';
+  } finally {
+    setLoading(btn, false, 'Connect to GitHub');
+  }
+});
+
+$('disconnectBtn').addEventListener('click', () => {
+  if (state.scheduleDirty || state.notifsDirty) {
+    if (!confirm('You have unsaved changes. Disconnect anyway?')) return;
+  }
+  state.token = ''; state.owner = ''; state.repo = '';
+  state.scheduleData = {}; state.notifications = [];
+  state.currentSha = null; state.notifSha = null;
+  state.scheduleDirty = false; state.notifsDirty = false;
+  mainView.style.display = 'none';
+  loginView.style.display = 'flex';
+  $('tokenInput').value = '';
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  SCHEDULE
+// ═══════════════════════════════════════════════════════════════════════
+function initSemesterSelect() {
+  semesterSelect.innerHTML = SEMESTER_NAMES
+    .map((n, i) => `<option value="${i+1}">${escapeHtml(n)} — ${SEMESTER_FILES[i+1]}</option>`)
+    .join('');
+  semesterSelect.value = state.currentSemester;
+}
+
+async function loadSemester(num) {
+  state.currentSemester = num;
+  const path = SEMESTER_FILES[num];
+  filePath.textContent = path;
+  classList.innerHTML = '<div class="empty">Loading…</div>';
+
+  try {
+    const file = await ghGetFile(path);
+    if (file) {
+      state.scheduleData = JSON.parse(b64Decode(file.content));
+      state.currentSha = file.sha;
+    } else {
+      state.scheduleData = {};
+      DAYS.forEach(d => state.scheduleData[d] = []);
+      state.currentSha = null;
+    }
+  } catch (err) {
+    showToast('Failed to load: ' + err.message, 'error', 4000);
+    state.scheduleData = {};
+    DAYS.forEach(d => state.scheduleData[d] = []);
+    state.currentSha = null;
+  }
+  // Ensure all 5 days exist in the right order
+  const ordered = {};
+  DAYS.forEach(d => { ordered[d] = Array.isArray(state.scheduleData[d]) ? state.scheduleData[d] : []; });
+  state.scheduleData = ordered;
+
+  state.scheduleDirty = false;
+  updateDirtyIndicator();
+  renderDayTabs();
+  renderClassList();
+}
+
+function renderDayTabs() {
+  dayTabs.innerHTML = DAYS.map(d => {
+    const count = (state.scheduleData[d] || []).length;
+    const label = d.charAt(0).toUpperCase() + d.slice(1, 3);
+    const badge = count > 0 ? `<span class="count">${count}</span>` : '';
+    return `<button data-day="${d}" class="${d === state.currentDay ? 'active' : ''}">${label}${badge}</button>`;
+  }).join('');
+}
+
+function renderClassList() {
+  const classes = state.scheduleData[state.currentDay] || [];
+  if (!classes.length) {
+    classList.innerHTML = `<div class="empty">No classes for ${state.currentDay}. Click "+ Add Class" to add one.</div>`;
+    return;
+  }
+  classList.innerHTML = classes.map((c, i) => `
+    <div class="class-item" data-index="${i}">
+      <div class="time">${escapeHtml(c.time || '—')}</div>
+      <div class="body">
+        <div class="subject">${escapeHtml(c.subject || 'Untitled')}</div>
+        <div class="meta">${[c.teacher, c.room, c.type].filter(Boolean).map(escapeHtml).join(' · ') || '—'}</div>
+      </div>
+      <div class="actions">
+        <button data-action="up" title="Move up" ${i===0?'disabled':''}>↑</button>
+        <button data-action="down" title="Move down" ${i===classes.length-1?'disabled':''}>↓</button>
+        <button data-action="duplicate" title="Duplicate this class">⎘</button>
+        <button data-action="edit" title="Edit">✎</button>
+        <button data-action="delete" class="danger" title="Delete">✕</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+dayTabs.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-day]');
+  if (!btn) return;
+  state.currentDay = btn.dataset.day;
+  renderDayTabs();
+  renderClassList();
+});
+
+classList.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-action]');
+  if (!btn) return;
+  const idx = parseInt(btn.closest('.class-item').dataset.index, 10);
+  const action = btn.dataset.action;
+  const classes = state.scheduleData[state.currentDay];
+
+  if (action === 'edit') {
+    openClassModal(idx);
+  } else if (action === 'delete') {
+    if (!confirm(`Delete "${classes[idx].subject || 'this class'}"?`)) return;
+    classes.splice(idx, 1);
+    markScheduleDirty();
+    renderDayTabs();
+    renderClassList();
+  } else if (action === 'duplicate') {
+    const copy = JSON.parse(JSON.stringify(classes[idx]));
+    classes.splice(idx + 1, 0, copy);
+    markScheduleDirty();
+    renderDayTabs();
+    renderClassList();
+  } else if (action === 'up' && idx > 0) {
+    [classes[idx-1], classes[idx]] = [classes[idx], classes[idx-1]];
+    markScheduleDirty();
+    renderClassList();
+  } else if (action === 'down' && idx < classes.length - 1) {
+    [classes[idx], classes[idx+1]] = [classes[idx+1], classes[idx]];
+    markScheduleDirty();
+    renderClassList();
+  }
+});
+
+function markScheduleDirty() {
+  state.scheduleDirty = true;
+  updateDirtyIndicator();
+}
+function updateDirtyIndicator() {
+  dirtyIndicator.textContent = state.scheduleDirty ? '● Unsaved changes' : '';
+  notifDirtyIndicator.textContent = state.notifsDirty ? '● Unsaved changes' : '';
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+//  CLASS MODAL
+// ═══════════════════════════════════════════════════════════════════════
+const classModal = $('classModal');
+function openClassModal(idx) {
+  state.editingClassIndex = idx;
+  const classes = state.scheduleData[state.currentDay];
+  const c = idx >= 0 ? classes[idx] : { subject:'', teacher:'', time:'', room:'', type:'Lecture' };
+
+  $('classModalTitle').textContent = idx >= 0 ? 'Edit Class' : 'Add Class';
+  $('classSubject').value = c.subject || '';
+  $('classTeacher').value = c.teacher || '';
+  $('classRoom').value = c.room || '';
+  $('classType').value = c.type || 'Lecture';
+  const [start, end] = parseTimeRange(c.time || '');
+  $('classStart').value = start;
+  $('classEnd').value = end;
+
+  classModal.classList.add('show');
+  setTimeout(() => $('classSubject').focus(), 50);
+}
+function closeClassModal() {
+  classModal.classList.remove('show');
+  state.editingClassIndex = -1;
+}
+$('classModalCancel').addEventListener('click', closeClassModal);
+classModal.addEventListener('click', (e) => { if (e.target === classModal) closeClassModal(); });
+
+$('classModalSave').addEventListener('click', () => {
+  const subject = $('classSubject').value.trim();
+  if (!subject) { showToast('Subject is required', 'error'); return; }
+  const start = $('classStart').value;
+  const end = $('classEnd').value;
+  const time = formatTimeRange(start, end);
+
+  // ── Field order EXACTLY matches existing files: time, subject, teacher, room, type
+  const obj = {
+    time,
+    subject,
+    teacher: $('classTeacher').value.trim(),
+    room: $('classRoom').value.trim(),
+    type: $('classType').value
+  };
+
+  const classes = state.scheduleData[state.currentDay];
+  if (state.editingClassIndex >= 0) {
+    classes[state.editingClassIndex] = obj;
+  } else {
+    classes.push(obj);
+  }
+  markScheduleDirty();
+  closeClassModal();
+  renderDayTabs();
+  renderClassList();
+});
+
+$('addClassBtn').addEventListener('click', () => openClassModal(-1));
+
+// ═══════════════════════════════════════════════════════════════════════
+//  SAVE SCHEDULE (2-space indent, matches your existing files)
+// ═══════════════════════════════════════════════════════════════════════
+$('saveScheduleBtn').addEventListener('click', async (e) => {
+  const btn = e.currentTarget;
+  const path = SEMESTER_FILES[state.currentSemester];
+  const json = JSON.stringify(state.scheduleData, null, SCHEDULE_INDENT) + '\n';
+  setLoading(btn, true, 'Committing…');
+  try {
+    const result = await ghPutFile(path, json, state.currentSha,
+      `Update ${SEMESTER_NAMES[state.currentSemester-1]} schedule via BSRIS CMS`);
+    state.currentSha = result.content.sha;
+    state.scheduleDirty = false;
+    updateDirtyIndicator();
+    showToast(`✅ Committed ${path}`, 'success');
+  } catch (err) {
+    showToast('Save failed: ' + err.message, 'error', 5000);
+  } finally {
+    setLoading(btn, false, 'Save to GitHub');
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  NOTIFICATIONS
+// ═══════════════════════════════════════════════════════════════════════
+async function loadNotifications() {
+  try {
+    const file = await ghGetFile(NOTIF_FILE);
+    if (file) {
+      state.notifications = JSON.parse(b64Decode(file.content));
+      state.notifSha = file.sha;
+    } else {
+      state.notifications = [];
+      state.notifSha = null;
+    }
+    if (!Array.isArray(state.notifications)) state.notifications = [];
+  } catch (err) {
+    showToast('Notifications load failed: ' + err.message, 'error');
+    state.notifications = [];
+  }
+  state.notifsDirty = false;
+  updateDirtyIndicator();
+  renderNotifications();
+}
+
+function renderNotifications() {
+  if (!state.notifications.length) {
+    notificationList.innerHTML = '<div class="empty">No notifications yet. Click "+ Add Notification" to create one.</div>';
+    return;
+  }
+  // Display newest first (descending ID) — matches your file
+  const sorted = [...state.notifications].sort((a,b) => (b.id||0) - (a.id||0));
+  notificationList.innerHTML = sorted.map(n => {
+    const realIdx = state.notifications.indexOf(n);
+    return `
+      <div class="notif-item" data-index="${realIdx}">
+        <div class="head">
+          <span class="id">#${n.id || '?'}</span>
+          <span class="title">${escapeHtml(n.title || 'Untitled')}</span>
+          <span class="date">${escapeHtml([n.date, n.time].filter(Boolean).join(' '))}</span>
+        </div>
+        <div class="body">${escapeHtml(n.body || '')}</div>
+        <div class="actions">
+          <button class="btn-ghost" data-action="edit">Edit</button>
+          <button class="btn-danger" data-action="delete">Delete</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+notificationList.addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-action]');
+  if (!btn) return;
+  const idx = parseInt(btn.closest('.notif-item').dataset.index, 10);
+  if (btn.dataset.action === 'edit') openNotifModal(idx);
+  else if (btn.dataset.action === 'delete') {
+    if (!confirm('Delete this notification?')) return;
+    state.notifications.splice(idx, 1);
+    state.notifsDirty = true;
+    updateDirtyIndicator();
+    renderNotifications();
+  }
+});
+
+const notifModal = $('notifModal');
+function openNotifModal(idx) {
+  state.editingNotifIndex = idx;
+  const n = idx >= 0 ? state.notifications[idx] : { title:'', body:'', date:'', time:'' };
+  $('notifModalTitle').textContent = idx >= 0 ? `Edit Notification #${n.id || ''}` : 'Add Notification';
+  $('notifTitle').value = n.title || '';
+  $('notifBody').value = n.body || '';
+  $('notifDate').value = n.date || '';
+  $('notifTime').value = n.time || '';
+  notifModal.classList.add('show');
+}
+function closeNotifModal() {
+  notifModal.classList.remove('show');
+  state.editingNotifIndex = -1;
+}
+$('notifModalCancel').addEventListener('click', closeNotifModal);
+$('addNotifBtn').addEventListener('click', () => openNotifModal(-1));
+notifModal.addEventListener('click', (e) => { if (e.target === notifModal) closeNotifModal(); });
+
+$('notifModalSave').addEventListener('click', () => {
+  const title = $('notifTitle').value.trim();
+  const body = $('notifBody').value.trim();
+  if (!title || !body) { showToast('Title and body are required', 'error'); return; }
+
+  if (state.editingNotifIndex >= 0) {
+    const existing = state.notifications[state.editingNotifIndex];
+    existing.title = title;
+    existing.body = body;
+    existing.date = $('notifDate').value.trim();
+    existing.time = $('notifTime').value.trim();
+  } else {
+    const nextId = state.notifications.reduce((max, n) => Math.max(max, n.id || 0), 0) + 1;
+    // Field order: id, title, body, date, time — matches your file exactly
+    state.notifications.push({
+      id: nextId,
+      title,
+      body,
+      date: $('notifDate').value.trim(),
+      time: $('notifTime').value.trim()
+    });
+  }
+  state.notifsDirty = true;
+  updateDirtyIndicator();
+  closeNotifModal();
+  renderNotifications();
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  SAVE NOTIFICATIONS (4-space indent, newest first, matches your file)
+// ═══════════════════════════════════════════════════════════════════════
+$('saveNotifsBtn').addEventListener('click', async (e) => {
+  const btn = e.currentTarget;
+  // Sort DESCENDING (newest ID first) — exactly how your file is arranged
+  const sorted = [...state.notifications].sort((a,b) => (b.id||0) - (a.id||0));
+  const json = JSON.stringify(sorted, null, NOTIF_INDENT) + '\n';
+  setLoading(btn, true, 'Committing…');
+  try {
+    const result = await ghPutFile(NOTIF_FILE, json, state.notifSha,
+      'Update notifications.json via BSRIS CMS');
+    state.notifSha = result.content.sha;
+    state.notifsDirty = false;
+    updateDirtyIndicator();
+    showToast('✅ Committed notifications.json', 'success');
+  } catch (err) {
+    showToast('Save failed: ' + err.message, 'error', 5000);
+  } finally {
+    setLoading(btn, false, 'Save to GitHub');
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  TABS
+// ═══════════════════════════════════════════════════════════════════════
+document.querySelectorAll('nav.tabs button').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('nav.tabs button').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const which = tab.dataset.tab;
+    $('schedulesTab').classList.toggle('active', which === 'schedules');
+    $('notificationsTab').classList.toggle('active', which === 'notifications');
+  });
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  SEMESTER SWITCH / REFRESH / IMPORT
+// ═══════════════════════════════════════════════════════════════════════
+semesterSelect.addEventListener('change', async () => {
+  if (state.scheduleDirty) {
+    if (!confirm('You have unsaved changes. Switch semester anyway?')) {
+      semesterSelect.value = state.currentSemester;
+      return;
+    }
+  }
+  await loadSemester(parseInt(semesterSelect.value, 10));
+});
+
+$('refreshBtn').addEventListener('click', async (e) => {
+  const btn = e.currentTarget;
+  if ((state.scheduleDirty || state.notifsDirty) &&
+      !confirm('Discard local changes and reload from GitHub?')) return;
+  setLoading(btn, true, '');
+  try {
+    await loadSemester(state.currentSemester);
+    await loadNotifications();
+    showToast('Reloaded from GitHub', 'success');
+  } finally {
+    setLoading(btn, false, '↻ Refresh');
+  }
+});
+
+const importModal = $('importModal');
+$('importBtn').addEventListener('click', () => {
+  const opts = SEMESTER_NAMES.map((n, i) => {
+    if (i+1 === state.currentSemester) return '';
+    return `<option value="${i+1}">${escapeHtml(n)} — ${SEMESTER_FILES[i+1]}</option>`;
+  }).join('');
+  $('importSource').innerHTML = opts;
+  importModal.classList.add('show');
+});
+$('importCancel').addEventListener('click', () => importModal.classList.remove('show'));
+importModal.addEventListener('click', (e) => { if (e.target === importModal) importModal.classList.remove('show'); });
+
+$('importConfirm').addEventListener('click', async (e) => {
+  const src = parseInt($('importSource').value, 10);
+  if (!src) return;
+  const btn = e.currentTarget;
+  setLoading(btn, true, 'Fetching…');
+  try {
+    const file = await ghGetFile(SEMESTER_FILES[src]);
+    if (!file) throw new Error('Source file not found on GitHub');
+    const data = JSON.parse(b64Decode(file.content));
+    const ordered = {};
+    DAYS.forEach(d => { ordered[d] = Array.isArray(data[d]) ? JSON.parse(JSON.stringify(data[d])) : []; });
+    state.scheduleData = ordered;
+    markScheduleDirty();
+    renderDayTabs();
+    renderClassList();
+    importModal.classList.remove('show');
+    showToast(`Imported from ${SEMESTER_NAMES[src-1]} — press Save to commit`, 'info', 4000);
+  } catch (err) {
+    showToast('Import failed: ' + err.message, 'error', 5000);
+  } finally {
+    setLoading(btn, false, 'Import');
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  UNSAVED-EXIT WARNING
+// ═══════════════════════════════════════════════════════════════════════
+window.addEventListener('beforeunload', (e) => {
+  if (state.scheduleDirty || state.notifsDirty) {
+    e.preventDefault();
+    e.returnValue = '';
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════════════════════════════════
+loadSavedToken();
+</script>
+</body>
+</html>
