@@ -145,7 +145,7 @@
       "subject": "FYP Slot",
       "teacher": "",
       "room": "",
-      "type": "Lecture"
+      "type": "None"
     },
     {
       "time": "1:30 PM – 2:30 PM",
@@ -159,7 +159,7 @@
       "subject": "FYP Slot",
       "teacher": "",
       "room": "",
-      "type": "Lecture"
+      "type": "None"
     }
   ]
 }
