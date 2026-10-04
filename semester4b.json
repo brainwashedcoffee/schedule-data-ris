@@ -170,11 +170,11 @@
       "type": "Lecture"
     },
     {
-      "time": "01:30 PM – 02:30 PM",
+      "time": "1:30 PM – 2:30 PM",
       "subject": "Jummah Break",
-      "teacher": "None",
-      "room": "None",
-      "type": "None"
+      "teacher": "",
+      "room": "",
+      "type": "Break"
     }
   ]
 }
