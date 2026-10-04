@@ -42,7 +42,7 @@
       "subject": "1 HOUR BREAK",
       "teacher": "",
       "room": "",
-      "type": "Break"
+      "type": ""
     },
     {
       "time": "03:30 PM – 04:30 PM",
@@ -144,7 +144,7 @@
       "subject": "1 HOUR BREAK",
       "teacher": "",
       "room": "",
-      "type": "Break"
+      "type": ""
     },
     {
       "time": "12:30 PM – 01:30 PM",
@@ -202,21 +202,21 @@
       "subject": "1 HOUR BREAK",
       "teacher": "",
       "room": "",
-      "type": "Break"
+      "type": ""
     },
     {
       "time": "1:30 PM – 2:30 PM",
       "subject": "Jummah Break",
       "teacher": "",
       "room": "",
-      "type": "Break"
+      "type": ""
     },
     {
       "time": "2:30 PM – 4:30 PM",
       "subject": "2 HOUR BREAK",
       "teacher": "",
       "room": "",
-      "type": "Break"
+      "type": ""
     },
     {
       "time": "04:30 PM – 05:30 PM",
