@@ -274,13 +274,7 @@
     <label>Room</label>
     <input type="text" id="classRoom" placeholder="e.g. Room 5-19">
     <label>Type</label>
-    <select id="classType">
-      <option>Lecture</option>
-      <option>Lab</option>
-      <option>Break</option>
-      <option>Tutorial</option>
-      <option>None</option>
-    </select>
+    <input type="text" id="classType" placeholder="e.g. Lecture">
     <div class="modal-actions">
       <button class="btn-ghost" id="classModalCancel">Cancel</button>
       <button class="btn-primary" id="classModalSave">Save</button>
@@ -447,7 +441,7 @@ function to12h(t) {
   const [h, m] = t.split(':').map(Number);
   const period = h >= 12 ? 'PM' : 'AM';
   const hour12 = h % 12 || 12;
-  return `${hour12}:${String(m).padStart(2,'0')} ${period}`;
+  return `${String(hour12).padStart(2,'0')}:${String(m).padStart(2,'0')} ${period}`;
 }
 // Convert "11:30 AM – 12:30 PM" into ["11:30","12:30"] (24h)
 function parseTimeRange(str) {
@@ -751,13 +745,13 @@ const classModal = $('classModal');
 function openClassModal(idx) {
   state.editingClassIndex = idx;
   const classes = state.scheduleData[state.currentDay];
-  const c = idx >= 0 ? classes[idx] : { subject:'', teacher:'', time:'', room:'', type:'Lecture' };
+  const c = idx >= 0 ? classes[idx] : { subject:'', teacher:'', time:'', room:'', type:'' };
 
   $('classModalTitle').textContent = idx >= 0 ? 'Edit Class' : 'Add Class';
   $('classSubject').value = c.subject || '';
   $('classTeacher').value = c.teacher || '';
   $('classRoom').value = c.room || '';
-  $('classType').value = c.type || 'Lecture';
+     $('classType').value = c.type || '';
   const [start, end] = parseTimeRange(c.time || '');
   $('classStart').value = start;
   $('classEnd').value = end;
@@ -785,7 +779,7 @@ $('classModalSave').addEventListener('click', () => {
     subject,
     teacher: $('classTeacher').value.trim(),
     room: $('classRoom').value.trim(),
-    type: $('classType').value
+    type: $('classType').value.trim()
   };
 
   const classes = state.scheduleData[state.currentDay];
