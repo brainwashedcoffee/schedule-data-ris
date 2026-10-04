@@ -198,11 +198,25 @@
       "type": "Lecture"
     },
     {
-      "time": "01:30 PM – 02:30 PM",
+      "time": "12:30 PM – 1:30 PM",
+      "subject": "1 HOUR BREAK",
+      "teacher": "",
+      "room": "",
+      "type": "Break"
+    },
+    {
+      "time": "1:30 PM – 2:30 PM",
       "subject": "Jummah Break",
       "teacher": "",
       "room": "",
-      "type": ""
+      "type": "Break"
+    },
+    {
+      "time": "2:30 PM – 4:30 PM",
+      "subject": "2 HOUR BREAK",
+      "teacher": "",
+      "room": "",
+      "type": "Break"
     },
     {
       "time": "04:30 PM – 05:30 PM",
