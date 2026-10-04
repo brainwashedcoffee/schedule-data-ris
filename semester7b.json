@@ -104,7 +104,7 @@
       "type": "Lecture"
     },
     {
-      "time": "12:30 PM – 1:30 PM",
+      "time": "12:30 PM – 01:30 PM",
       "subject": "Intro to Deep Learning",
       "teacher": "Dr. Adil",
       "room": "05-19",
@@ -141,25 +141,25 @@
   ],
   "friday": [
     {
-      "time": "8:30 AM – 1:30 PM",
+      "time": "08:30 AM – 01:30 PM",
       "subject": "FYP Slot",
       "teacher": "",
       "room": "",
-      "type": "None"
+      "type": ""
     },
     {
-      "time": "1:30 PM – 2:30 PM",
+      "time": "01:30 PM – 02:30 PM",
       "subject": "Jummah Break",
       "teacher": "",
       "room": "",
       "type": ""
     },
     {
-      "time": "2:30 PM – 8:30 PM",
+      "time": "02:30 PM – 08:30 PM",
       "subject": "FYP Slot",
       "teacher": "",
       "room": "",
-      "type": "None"
+      "type": ""
     }
   ]
 }
