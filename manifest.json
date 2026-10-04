@@ -1,7 +1,7 @@
 {
-  "name": "BSRIS Schedule",
-  "short_name": "BSRIS",
-  "description": "Bahria University RIS Class Schedule",
+  "name": "BSRIS CMS",
+  "short_name": "RIS CMS",
+  "description": "Bahria University RIS CMS Portal",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
