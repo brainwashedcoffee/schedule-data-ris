@@ -29,7 +29,7 @@
       "type": "Lecture"
     },
     {
-      "time": "5:30 PM – 6:30 PM",
+      "time": "05:30 PM – 06:30 PM",
       "subject": "Robot Modelling and Control Lab",
       "teacher": "Naima Adnan",
       "room": "Robotics Lab",
@@ -142,25 +142,25 @@
   ],
   "friday": [
     {
-      "time": "8:30 AM – 1:30 PM",
+      "time": "08:30 AM – 01:30 PM",
       "subject": "FYP Slot",
       "teacher": "",
       "room": "",
-      "type": "None"
+      "type": ""
     },
     {
-      "time": "1:30 PM – 2:30 PM",
+      "time": "01:30 PM – 02:30 PM",
       "subject": "Jummah Break",
       "teacher": "",
       "room": "",
       "type": ""
     },
     {
-      "time": "2:30 PM – 8:30 PM",
+      "time": "02:30 PM – 08:30 PM",
       "subject": "FYP Slot",
       "teacher": "",
       "room": "",
-      "type": "None"
+      "type": ""
     }
   ]
 }
