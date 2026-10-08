@@ -1,5 +1,12 @@
 [
     {
+        "id": 15,
+        "title": "SLOW WIFI",
+        "body": "Due to the ongoing protests and long march, internet services are affected. If the app isn't working, try turning off Wi-Fi and mobile data so it can load from cache.\n\nThank you for your patience",
+        "date": "October 8,  2026",
+        "time": "08:40 AM"
+    },
+    {
         "id": 14,
         "title": "Suggestion by Saad (Beta Tester)",
         "body": "A suggestion reported by Saad has been successfully reviewed and implemented.\n\nThank you for helping improve the app.",
