@@ -210,20 +210,6 @@
       "teacher": "",
       "room": "",
       "type": ""
-    },
-    {
-      "time": "02:30 PM – 04:30 PM",
-      "subject": "2 HOUR BREAK",
-      "teacher": "",
-      "room": "",
-      "type": ""
-    },
-    {
-      "time": "04:30 PM – 05:30 PM",
-      "subject": "Understanding Quran I",
-      "teacher": "Dr. Rahimullah",
-      "room": "Auditorium",
-      "type": "Lecture"
     }
   ]
 }
